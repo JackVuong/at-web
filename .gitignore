@@ -45,3 +45,17 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+.idea/.name
+.idea/encodings.xml
+target/classes/application.yml
+target/classes/i18n/validations.properties
+target/classes/templates/fragments/footer.html
+target/classes/templates/index.html
+target/classes/vn/dhp/it/attendancetracking/web/util/DataResponse.class
+target/classes/vn/dhp/it/attendancetracking/infras/security/UserDetailsServiceImpl.class
+target/classes/vn/dhp/it/attendancetracking/web/interceptor/SideBarInterceptor.class
+target/classes/i18n/messages_vi.properties
+src/main/resources/templates/layouts/main.html
+/.idea
+/logs
+/target

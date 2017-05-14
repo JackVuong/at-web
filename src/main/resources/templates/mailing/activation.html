@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title >Attendance Tracking Account</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'Dear '+${username}+','" ></p>
+<p th:text="'Your Attendance Tracking account has been created, your password is '+${password}+', please click on the URL below to activate it:'"></p>
+<p>
+    <a th:href="@{|${baseUrl}/signin|}" th:text="@{|${baseUrl}/signin|}"></a>
+</p>
+<p>
+    <span>Regards,</span>
+    <br/>
+    <em>AttendanceTracking.</em>
+</p>
+</body>
+</html>

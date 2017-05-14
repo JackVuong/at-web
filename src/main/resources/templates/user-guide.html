@@ -1,0 +1,27 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="layouts/main">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{userguide.user.navigate}">User Guide</title>
+</head>
+<body>
+<section class="content-header" layout:fragment="content-header">
+    <div class="row">
+
+        <div class="pad margin no-print">
+            <div class="callout callout-info">
+                <h1 class="box-title" th:if="${isAdmin}">Hello Admin</h1>
+                <h1 class="box-title" th:unless="${isAdmin}">Hello User</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="content" layout:fragment="content-body">
+
+</div>
+
+</body>
+</html>

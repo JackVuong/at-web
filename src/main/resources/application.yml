@@ -1,0 +1,59 @@
+app:
+    upload-dir: ./files
+    mail-sender:  AttendanceTracking<noreply@email.dhpit.com>
+    host-domain: http://localhost:8080
+    async-info:
+        core-pool-size: 4
+        max-pool-size: 64
+        queue-capacity: 100000
+    api-info:
+        title: AttendanceTracking API
+        description: REST-ful APIs documentation for AttendanceTracking
+        version: @project.version@
+        contact: luanvuong@kms-technology.com
+        license: Copyright (c) 2017 DHP IT.
+    activation-expire-seconds: 604800
+    reset-expire-seconds: 86400
+    request-approve-betting-groups:
+        page-size: 10
+spring:
+    thymeleaf:
+        mode: HTML
+        cache: false
+
+    messages:
+        basename: i18n/messages, i18n/validations
+
+    datasource:
+        url: jdbc:postgresql://localhost:5432/db
+        username: luanvuong
+        password: 123
+        driver-class-name: org.postgresql.Driver
+
+    jpa:
+        hibernate.ddl-auto: validate
+
+    data:
+        mongodb:
+            uri: mongodb://localhost:27017/ngaythobet
+
+    mail:
+        host: smtp.zoho.com
+        port: 587
+        username: noreply@email.dhpit.com
+        password: adminemail@dhpit#2016
+        properties:
+            mail.transport.protocol: smtp
+            mail.smtp.auth: true
+            mail.smtp.starttls.enable: true
+
+server:
+    port: 8080
+
+logging:
+    file: logs/attendancetracking.log
+    level:
+        root: WARN
+
+
+
